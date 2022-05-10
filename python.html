@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <py-evn>
+            -requests
+            - matplotlib
+         
+        </py-evn>
+
+    </head>
+    <body>
+        <div id="porl">
+
+        </div>
+        <py-script output="porl">
+        import requests as re
+        res=re.get('https://www.youtube.com/')
+        print(res.text)
+        </py-script>
+    </body>
+</html>
